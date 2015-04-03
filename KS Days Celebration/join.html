@@ -1,0 +1,236 @@
+<html>
+<head>
+<title>Join Us
+</title>
+<script type="text/javascript">
+gen = "Male"
+
+ function clf()
+ {
+ 	
+	frm_reg.txtfname.value="First Name";
+	frm_reg.txtmname.value="Middle Name";
+	frm_reg.txtlname.value="Last Name";
+	
+	
+	frm_reg.radgen1.checked=false;
+	frm_reg.radgen2.checked=false;
+	
+	
+	frm_reg.chkmobile.checked=false;
+	frm_reg.chklandline.checked = false;
+	chklno();
+	chkmno();
+	
+    frm_reg.username.value="email id";
+	
+	
+ } 
+ function chkmno()
+ {
+ 	if(frm_reg.chkmobile.checked==true)
+	{
+	   frm_reg.txtmobile.disabled=false;
+ 	   frm_reg.txtmobile.value="";
+ 	   frm_reg.txtmobile.focus();
+	}
+	else
+	{
+	   frm_reg.txtmobile.value="1234567891";
+	   frm_reg.txtmobile.disabled=true;
+	   
+ 	
+	}
+ }
+ function chklno()
+ {
+ 	if(frm_reg.chklandline.checked== true)
+	{
+		
+	  frm_reg.txtcode.disabled=false;	
+   	  frm_reg.txtcode.value="";
+ 	  frm_reg.txtlandline.disabled =false;
+ 	  frm_reg.txtlandline.value="";
+	  frm_reg.txtcode.focus();
+	}
+	else
+	{
+		frm_reg.txtcode.value="079"
+		frm_reg.txtlandline.value="12345678"
+		frm_reg.txtlandline.disabled = true;
+		frm_reg.txtcode.disabled = true;
+	}
+ }
+ 
+ function validate()
+ {
+ 
+ 	uname=frm_reg.username.value;
+    vgenm = frm_reg.radgen1;
+	vgenf = frm_reg.radgen2;
+	if(frm_reg.txtfname.value == "" )
+   {
+     alert( "Please provide your first name!" );
+     frm_reg.txtfname.focus() ;
+     return false;
+   }
+   if(frm_reg.txtmname.value == "" )
+   {
+     alert( "Please provide your middle name!" );
+     frm_reg.txtmname.focus() ;
+     return false;
+   }
+   if(frm_reg.txtlname.value == "" )
+   {
+     alert( "Please provide your last name!" );
+     frm_reg.txtlname.focus() ;
+     return false;
+   }
+   if(vgenm.checked!=true && vgenf.checked!=true)
+   {
+   	alert("Select Gender");
+	return false;
+   }
+   if(frm_reg.chkmobile.checked == true)
+   {
+
+		if(frm_reg.txtmobile.value.length < "10")
+		{
+			alert("Check mobile number");
+			frm_reg.txtmobile.value=""
+			frm_reg.txtmobile.focus();
+			return false;	
+		}	
+   }
+if(frm_reg.chklandline.checked == true)
+   {
+		
+		if(frm_reg.txtlandline.value.length<8)
+		{
+			alert("Check landline number");
+			frm_reg.txtcode.value=""
+			frm_reg.txtlandline.value=""
+			frm_reg.txtcode.focus();
+			return false;	
+		}	
+   }
+   if(frm_reg.username.value == "" )
+   {
+     alert( "Please provide email id!" );
+     frm_reg.username.focus() ;
+     return false;
+   }
+
+	alert("Thank You");
+    window.location="index.html";
+	
+
+	
+ }
+
+</script>
+
+
+</head>
+<body bgcolor="#000000">
+<center>
+  <a href="index.html"><img src="12345.jpg" width="615" height="50" border="0"></a> 
+  <br><br>
+<a href="index.html"><img src="HOME1.jpg"  name="lhome" border="0" onMouseover="lhome.src='HOME.jpg'" onMouseOut="lhome.src='HOME1.jpg'" ></a>
+<a href="days.html"><img src="DAYS1.jpg"  name="ldays" border="0" onMouseover="ldays.src='DAYS.jpg'" onMouseOut="ldays.src='DAYS1.jpg'"></a>
+<a href="event.html"><img src="EVE_2.jpg" name="eve" border="0" onMouseOver="eve.src='EVE_1.jpg'" onMouseOut="eve.src='EVE_2.jpg'"></a>
+<a href="join.html"><img src="JOINUS.jpg" name="join" border="0"></a>
+<a href="about.html"><img src="ABOUTUS1.jpg" name="lau" border="0" onMouseOver="lau.src='ABOUTUS.jpg'" onMouseOut="lau.src='ABOUTUS1.jpg'"></a>
+</center>
+<br><br><br>
+<center>
+<font color="#FFFFFF" size="4" face="Lucida Calligraphy">  
+ <strong> <font size="+5" color="#FFFF00"><center>JOIN US</center></font></strong>
+<hr color="#FFFFFF" size="8" width="300">
+ </center> 
+  
+  
+<br>
+<br>
+
+<form method="get" name="frm_reg">
+<table align="center">
+<tr>
+<td  rowspan="3" valign="right">
+  <strong><font color="#FFFF33">Name</font></strong></td>
+
+<td>
+<input type="text" name="txtfname" value ="First Name" size = "30" maxlength="25" onFocus="frm_reg.txtfname.value=''";>
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="text" name="txtmname" value ="Middle Name" size = "30" maxlength="25"onFocus="frm_reg.txtmname.value=''";>
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="text" name="txtlname" value ="Last Name" size = "30" maxlength="25" onFocus="frm_reg.txtlname.value=''";>
+</td>
+</tr>
+<tr><td><pre> </pre></td></tr>
+<tr>
+<td>
+  <strong><font color="#FFFF33">Gender</font>  </strong></td>
+<td>
+<font color="#FFFFFF" size="+1" face="Lucida Calligraphy">
+<input type="radio" name="radiogen" id="radgen1" value="MALE">Male
+<input type="radio" name="radiogen" id="radgen2"value="FEMALE" onClick="updgen('Female')">Female
+</font>
+</td>
+</tr>
+
+<tr><td><pre> </pre></td></tr>
+
+ 
+<tr>
+<td><strong><font color="#FFFF33">Contact No.</font></strong></td>
+<td><table> <tr> 
+             <td><input type="checkbox" name="chkmobile" value="residence" onClick="chkmno()"> <font color="#FFFFFF" size="+0.5" face="Lucida Calligraphy">Mobile no</font></td>
+             <td><input type="text" name="txtmobile" disabled="disabled" size="10" maxlength="10" value="1234567891"></td>
+	    </tr>
+		
+	    <tr>
+	     <td><input type="checkbox" name="chklandline" value="landline" onClick="chklno()"><font color="#FFFFFF" size="+0.5" face="Lucida Calligraphy">Landline no</font> </td>
+             <td>
+                 <input type="text" name="txtcode" disabled="disabled" size="3" maxlength="3" value="079">  
+                 <input type="text" name="txtlandline" disabled="disabled" size="8" maxlength="8" value="12345678"> 
+             </td>
+       	  	</tr>
+             </table>
+              </td>
+  			
+<tr><td><pre> </pre></td></tr>
+<tr>
+<td>
+
+  <strong><font color="#FFFF33">E-mail id</font></strong></td>
+<td>
+<input type="text" name="username" value="email id" size="25" maxlength="20" onFocus="frm_reg.username.value=''";>
+</td>
+
+</tr>
+</table>
+<br>
+<br>
+
+
+<table align="center">
+<tr align="center">
+<td>
+<input type="button" name ="SUBMIT" value="SUBMIT" onClick="validate()">   
+ <input type="button" name ="RESET" value="RESET" onClick="clf()">
+</td>
+</tr>
+</table>
+</form>
+</font>
+</body>
+</html>

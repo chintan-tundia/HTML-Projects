@@ -1,0 +1,97 @@
+<html>
+<script>
+var on = 0;
+var t ,flag=0;
+
+function startslideshow()
+{
+ 
+ 		if(flag==0)
+		{
+			play1.src="stopbtn.jpg";
+			flag=1;
+		}
+		else
+		{
+			flag=0;	
+			play1.src="playbtn.jpg";
+		}
+		if(!on)
+		{
+	   		on=1;
+			loop();
+		
+		}
+		else
+		{
+			on = 0;
+			clearTimeout(t);
+		}
+}
+i=0;
+function loop()
+{
+	   	
+		i=i+1
+		 
+	    if(i==1)	
+		image1.src="m1.jpg";
+		else if(i==2)
+		image1.src="m2.jpg";
+		else if(i==3)
+		image1.src="m3.jpg";
+		else if(i==4)
+		{
+		image1.src="m4.jpg";
+		i=0;
+		}
+
+		t = setTimeout("loop()",3000);
+		
+}
+
+function stopslideshow()
+{
+	on=0;
+}
+</script>
+<head>
+<title>Traditional Day</title>
+
+</head>
+
+
+<body bgcolor="#000000">
+<center>
+  <a href="index.html"><img src="12345.jpg" width="615" height="50" border="0"></a> 
+  <br><br>
+<a href="index.html"><img src="HOME1.jpg"  name="lhome" border="0" onMouseover="lhome.src='HOME.jpg'" onMouseOut="lhome.src='HOME1.jpg'"></a>
+<a href="days.html"><img src="DAYS1.jpg"  name="ldays" border="0" onMouseover="ldays.src='DAYS.jpg'" onMouseOut="ldays.src='DAYS1.jpg'"></a>
+<a href="event.html"><img src="EVE_2.jpg" name="eve" border="0" onMouseOver="eve.src='EVE_1.jpg'" onMouseOut="eve.src='EVE_2.jpg'"></a>
+<a href="join.html"><img src="JOINUS1.jpg" name="join" border="0" onMouseOver="join.src='JOINUS.jpg'" onMouseOut="join.src='JOINUS1.jpg'"></a>
+<a href="about.html"><img src="ABOUTUS1.jpg" name="lau" border="0" onMouseOver="lau.src='ABOUTUS.jpg'" onMouseOut="lau.src='ABOUTUS1.jpg'"></a>
+</center>
+<br><br><br>
+<center><b><font color="#FFFF00" size="+6" face="Lucida Calligraphy">Twins Day</font></b></center>
+</br>
+
+<center>
+<hr color="#FFFFFF" width="600"><hr color="#FFFFFF" width="600">
+<img src="m1.jpg" width="600" height="400"name="image1">
+<hr color="#FFFFFF" width="600"><hr color="#FFFFFF" width="600">
+<br><br>
+<a href="#">
+<img src="playbtn.jpg" name="play1" onClick="startslideshow()"  border="0">
+</a>
+<br>
+<font color="#FFFFFF" size="+0.3" face="Lucida Calligraphy">Click here to play slideshow</font>
+<br><br>
+<a href="days.html">
+<img src="return.png" height="17"  border="0">
+<font color="#FFFFFF" size="+1" face="Lucida Calligraphy">
+Back to Days
+</font>
+</a>
+</center>
+</body>
+</html>
