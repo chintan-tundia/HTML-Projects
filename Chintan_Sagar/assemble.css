@@ -1,0 +1,636 @@
+body
+{
+	background-color:#CCC;	
+}
+#main_body
+{
+	margin-left:auto;
+	margin-right:auto;
+	height:auto;
+	width:100%;
+	margin-bottom:-8px;
+	background-color:#999;
+}
+#header_bar
+{
+	margin-left:auto;
+	margin-right:auto;
+	height:160px;
+	width:100%;
+}
+#header
+{
+	width:100%;
+    position: fixed;
+	height:160px;
+	margin:-8px 0px 0px -8px;
+	border-radius:0px 0px 100% 100%;
+	//	border-radius:0px 0px 120px 120px;
+	background-image:url(images/head1.png);
+}
+
+#tollfree
+{
+	float:right;
+	color: #BBDDFF;
+	width:250px;
+	height:30px;
+	font-size:15px;
+	z-index:100;
+}
+#ph_icon
+{
+	background-image:url(images/phone.png);
+	height:40px;
+	width:40px;
+	float:left;
+}
+
+#titlebar
+{
+	width:600px;
+	height:80px;
+	margin-left: auto;
+	margin-right: auto;
+	//background-color:#FF0000;
+}
+#logo
+{
+	background-image:url(images/logo.png);
+	height:68px;
+	width:72px;
+	//margin-left:50px;
+	float:left;
+}
+#title
+{
+	text-align:left;
+	height:60px;
+	width:500px;
+	float:left;
+	//background-color:#000099;
+	color: #7AA8FE;
+	font-size:50px;
+	margin-top:10px;
+	//padding-top:15px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-align: center;
+	font-weight: bold;		
+}
+#header a
+{
+	text-decoration:none;	
+}
+#but_bar
+{
+	margin-left:auto;
+	margin-right:auto;
+	height:50px;
+	width:800px;
+	margin-top:12px;
+    //border-radius:0px 0px 100% 100%;
+	//background-color:#FFF;
+}
+
+.button
+{
+	width:150px;
+	height: 40px;
+	float: left;
+	padding-top:10px;
+	text-align:center;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:22px;	
+	left: auto;
+	right: auto;	
+}
+.button:hover
+{
+	font-size: 24px;
+	box-shadow:0px 0px 20px #FFFFFF;
+	border-radius:10px;
+
+}
+
+#but_bar a
+{
+	text-decoration: none;
+	color:#BBDDFF;
+	list-style-type: none;
+}
+
+
+.submenu_bar
+{
+	height:0px;
+	width: inherit;
+	background-color:#000000;
+	margin-top: 15px;
+	visibility: hidden;
+	border-radius: 0px 0px 20px 20px;
+	-moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	background-repeat:repeat;
+	box-shadow:0px 0px 15px #000000;
+}
+.subbut
+{
+	width:auto;
+	//background-color:#666;
+	color: #BBDDFF;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:18px;
+	text-align:left;
+	visibility:hidden;
+	padding-left:17px;
+	//border-radius:0px 0px 20px 20px;
+}
+.subbut:hover
+{
+	color: #000;
+	background-color: #BBDDFF;
+}
+.button:hover .submenu_bar .subbut
+{
+	visibility:visible;
+	-moz-transition:all 0.3s ease;
+	-webkit-transition:all 0.3s ease;
+	-ms-transition:all 0.3s ease;
+}
+.button:hover .submenu_bar
+{
+	visibility:visible;
+	height:200px;
+	-moz-transition:all 0.2s ease;
+	-webkit-transition:all 0.2s ease;
+	-ms-transition:all 0.2s ease;
+}
+#container
+{
+	margin-left:auto;
+	margin-right:auto;
+	height:auto;
+	width:800px;
+	background-color:#CCC;
+	padding-top:40px;
+	padding-bottom:40px;
+	margin-top:-40px;
+	box-shadow:0px 0px 100px #000000;
+}
+.name_bar
+{
+	margin-left:auto;
+	margin-right:auto;
+	width:200px;
+	height:auto;
+	background-image:url(images/head1.png);
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:30px;
+	border-radius:10px 10px 0px 0px;
+	color:#FFF;
+	text-align:center;
+	box-shadow:0px 0px 10px #030303;
+	text-shadow:0px 0px 10px #ABABAB;
+}
+#aboutus
+{
+	background-image: url(images/about-us.jpg);
+	width: 400px;
+	height:200px;
+	border-radius: 10px;
+	background-repeat: no-repeat;
+	margin-left:auto;
+	margin-right:auto;
+	box-shadow:0px 0px 20px #030303;
+}
+#box
+{
+	width:600px;
+	height: auto;
+	background-color: #B0B0B0;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #000;
+	border-radius: 10px;
+}
+#aboutus_content
+{
+	width:560px;
+	height:auto;
+	background-color:#666666;
+	color:#FFFFFF;
+	text-align:justify;
+	border-radius:10px;
+	margin-top:10px;
+	padding:20px;
+}
+/*----FOOTER-----*/
+
+#footer
+{
+	height:50px;
+	padding:5px;
+	background-image: url(images/footer.png);
+    border-radius:0px 0px 50% 50%;
+	margin-bottom:-8px;
+	color:#BBDDFF;
+}
+#fbut_bar
+{
+	
+	width:800px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+#fbut_bar a
+{
+	text-decoration: none;	
+	color:#BBDDFF;
+}
+#fbut_bar a:hover
+{
+	text-decoration: underline;
+	color: #BBDDFF;
+	font-weight: bold;
+}
+
+#cp_right
+{
+	margin-top:10px;
+	color: #FFF;
+	text-align: center;
+	font-size:14px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+/*--------contanct us image----*/
+#contactus_image
+{
+	background-image:url(images/Contact_icon.png);
+	width:300px;
+	height:222px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:15px;	
+	border-radius: 10px;
+	background-repeat: no-repeat;
+	box-shadow:0px 0px 20px #030303;
+}
+/*----FORM----*/
+th
+{
+	color: #FFFFFF;
+	//background-color:#FF8040;
+	 width:75px;
+	text-align: left;
+	font-weight: bold;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+input,textarea
+{
+		font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.form_box
+{
+	height:inherit;
+//	width:580;
+	width:380;
+	padding:10px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#6C6C6C;
+	border-radius:10px;
+	margin-top:10px;
+	margin-bottom:-10px;
+}
+.text_input
+{
+	font:"Trebuchet MS", Arial, Helvetica, sans-serif;	
+}
+input[type="submit"],input[type="reset"],input[type="button"]
+{
+	color:#fff;
+	background-color: #999999;
+	height: 30px;
+	width: 70px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	font-size: medium;
+	border-radius:5px;
+	margin-left:auto;
+	margin-right:auto;
+}
+input[type="submit"]:hover,input[type="reset"]:hover,input[type="button"]:hover
+{
+	color: #fff;
+	background-color: #666666;
+	height: 30px;
+	width: 70px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	font-size: medium;
+	cursor: pointer;
+}
+
+/*---reach---*/
+#map_bar
+{
+	width:auto;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	padding:10px;
+	padding-top:3px;
+}
+.map
+{
+	background-color:#575757;
+	background-image:url(images/delhi_map.png);
+	border-radius:10px;
+	height:165px;
+	width:220px;
+	float:left;
+	margin-top:10px;
+	box-shadow:0px 0px 10px #030303;
+}
+.main_branch
+{
+	width:350px;
+	height:165px;
+	margin-left:10px;
+	background-color:#6C6C6C;
+	float:left;
+	margin-top:10px;
+	border-radius:10px;
+	text-align:justify;
+	color:#DADADA;
+	margin-bottom:10px;
+}
+.caption
+{
+	width:auto;
+	height:30px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:20px;
+	border-radius:10px;
+	color:#FFF;
+	background-color:#2B2B2B;
+	text-align:center;
+	box-shadow:0px 0px 5px #030303;
+	text-shadow:0px 0px 10px #ABABAB;
+}
+#address_bar
+{
+	width:inherit;
+//	height:341px;
+	height:350px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:30px;
+}
+.citybar
+{
+	width:inherit;
+	height:auto;
+	background-color:#2D2D2D;
+	color:white;
+	text-align:center;
+	border-radius:10px;
+	text-shadow:0px 0px 10px #ABABAB;
+	
+}
+.address
+{
+
+	width:187px;
+	height:120px;
+	//padding:10px;
+	margin-left:10px;
+	background-color:#6C6C6C;
+	float:left;
+	margin-top:10px;
+	border-radius:10px;
+	text-align:justify;
+	color:#DADADA;
+}
+.address_content
+{
+		padding:5px;
+}
+#follow_us_bar
+{
+	margin-left:auto;
+	margin-right:auto;
+	width:300px;;
+	height:50px;
+	color:#FFF;
+	font-size:25px;
+	text-align:center;
+	background-image:url(images/head1.png);
+	border-radius:0px 0px 10px 10px;
+	box-shadow:0px 0px 5px #030303;
+	text-shadow:0px 0px 10px #ABABAB;
+}
+/*--BUILD PC---*/
+#total
+{
+	position:fixed;
+	border-radius:10px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left:5px;
+	font-size:18px;
+	background-color:#FFFFAA;
+	margin-left:850px;
+	box-shadow:0px 0px 10px #000000;
+	height:auto;
+	width:180px;
+	
+}
+td img
+{
+	height:60px;
+	width:60px;
+}
+select
+{
+	width:200px;
+}
+td
+{
+	color:white;
+	font-size:16px;
+	
+}
+
+/*---categories---*/
+#cattable th
+{		
+	vertical-align:central;
+}
+#cattable tr
+{
+	//height:200px;
+	//background-image:url(images/head1.png);
+	border-radius:10px;
+}
+#cattable table
+{
+	border-radius:10px;
+}
+#cattable td
+{
+	vertical-align:middle;
+	
+}
+#cattable a
+{
+	text-decoration:none;
+	color:#FFF;
+}
+#cattable img
+{
+	height:170px;
+	width:170px;
+}
+.cat_image
+{
+	width:150px;
+	height:150px;
+	
+	
+}
+.cat_content
+{
+	width:300px;
+	background-color:#0000FF;
+	float:left;
+}
+.itembar
+{
+	
+	height:140px;
+	width:inherit;
+	margin-top:10px;
+}
+#itemcont
+{
+	height:auto;
+	width:inherit;
+	margin-top:10px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	text-align:center;
+	color:white;
+	
+}
+#zoomitem
+{
+	height:300px;
+	width:300px;
+	border-radius:10px;
+	margin-left:auto;
+	margin-right:auto;
+	box-shadow:0px 0px 10px #000000;
+	-moz-transition:all ease 1s;
+	-webkit-transition:all ease 1s;
+	-o-transition:all ease 1s;
+	-ms-transition:all ease 1s;
+	background-repeat:no-repeat;
+}
+#zoomitem img
+{
+	height:200px;
+	width:200px;
+	border-radius:10px;
+	
+}
+.item
+{
+	border-radius:10px;
+	width:100px;
+	height:150px;
+	float:left;	
+	margin-right:12px;
+	text-align:center;
+	cursor:pointer;
+}
+.item img
+{	
+	border-radius:10px;
+	width:100px;
+	height:100px;
+
+}
+
+/*--processor---*/
+
+/*---slideshow--*/
+.slide
+{
+	-moz-transition:all ease 1s;
+	-webkit-transition:all ease 1s;
+	-o-transition:all ease 1s;
+	-ms-transition:all ease 1s;
+	border-radius:10px;
+	width:90%;
+	background-color:white;
+	height:auto;
+	border-radius:10px;
+	box-shadow:0px 0px 10px #000000;
+	//opacity:0.5;
+}
+.slide img
+{
+
+	width:300px;
+	height:auto;
+
+}
+.slide:hover
+{
+	//opacity:1;
+}
+
+.best img
+{
+	border-radius:10px;
+	box-shadow:0px 0px 10px #000000;
+}
+.best
+{
+	float:left;
+
+}
+#button
+{
+	float:left;
+	width:140px;
+	height:40px;
+	margin-left:10px;
+	margin-top:100px;
+	margin-right:10px;
+	background-color:#008000;
+	opacity:0.7px;
+	border-radius:10px;
+	box-shadow:0px 0px 10px #FFF;
+	color:white;
+	text-align:center;
+	font-size:25px;
+}
+marquee
+{
+
+	border-radius:10px;
+	background-color:white;
+	color:#000;
+	text-align:left;
+	padding:5px;
+	border-radius:10px;
+	box-shadow:0px 0px 10px #000000;
+}
+

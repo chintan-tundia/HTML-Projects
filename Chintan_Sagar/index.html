@@ -1,0 +1,104 @@
+<html>
+<head>
+<link href="assemble.css" rel="stylesheet">
+<script>
+i=1;
+yes=1;
+function loop()
+{
+	if(yes==1)
+	{
+		i=i+1
+	   	 
+	  
+	    if(i==7)
+		{
+				i=0;
+		}
+		else
+		{	
+			image1.src="images/slide/"+i+".jpg";
+			
+		}
+	}
+		setTimeout("loop()",1500);
+	
+}
+	setTimeout("loop()",1500);
+
+</script>
+
+</head>
+
+<body onLoad="">
+<div id="main_body">
+
+<div id="header_bar">
+	<div id="header">
+    	<div id="tollfree"><div id="ph_icon"></div>Need Help ?<br>&nbsp;Call 1800-2167-2166(Toll Free) </div>
+        <div id="titlebar"><a href="#"><div id="logo"></div><div id="title">COMPUTER STORE</div></a></div>
+        
+        
+      <div id="but_bar">
+        	<a href="#"><div class="button">Home</div></a>
+		    <a href="categories.html"><div class="button">Categories
+            <div class="submenu_bar">
+		          <a href="processor.html"><div class="subbut">Processor</div></a>
+                  <a href="motherboard.html"><div class="subbut">Motherboard</div></a>
+                  <a href="monitor.html"><div class="subbut">Monitor</div></a>
+                  <a href="ram.html"><div class="subbut">RAM</div></a>                  
+                  <a href="harddisk.html"><div class="subbut">Hard disk</div></a>
+                  <a href="opticaldrives.html"><div class="subbut">Optical Drives</div></a>
+                  <a href="graphicscard.html"><div class="subbut">Graphics card</div></a> 
+                  <a href="peripherals.html"><div class="subbut">Peripherals</div></a>
+                  
+          </div>
+          </div></a>
+		    <a href="buildpc.html"><div class="button">Build PC</div></a>
+		    <a href="contactus.html"><div class="button">Contact us</div></a>
+		    <a href="aboutus.html"><div class="button">About us</div></a>
+        </div>
+  </div>
+  </div>
+    
+	<div id="container">
+   		<div id="box">
+        	
+        	<div id="aboutus_content">
+				<center><font color="yellow" size="+2" style="text-shadow:0px 0px 10px #FFFFFF">The Best Brands Of PC Parts At Your Home.</font></center>
+                <br>
+				<center><div class="slide"><img src="images/slide/1.jpg" name="image1" onMouseOver="yes=2;" onMouseOut="yes=1"></div></center>
+				<br><br>
+				<div class="best"><img src="images/img5351984.gif" class="best" width="200px" height="250px"></div>
+				<a href="buildpc.html"><div id="button">Build PC</div></a>
+                <marquee scrolldelay="01"align="right" width="190" height="240" direction="up" onMouseOver="this.stop()" onMouseOut="this.start()">
+                <b><font color="#000000" size="+1">Latest updates</font></b>
+                <li>Microsoft launched new range of smart PCs.</li>
+                <li>New updates for Toshiba keyboards.</li>
+                <li>Mac Pc got costlier.</li>
+                <li>Our main branch is shifted to New Delhi.</li>
+                <li>Mac Pc got costlier.</li>                                
+                </marquee>
+                <center><img src="images/best service.png"><font color="#FFFF00">Best service</font></center>
+                <center><img src="images/guarantee.png"><font color="#FFFF00">Guaranteed parts</font></center>
+                <center><img src="images/support.png" height="40px" width="40px"><font color="#FFFF00">24 x 7 Customer support</font></center>
+
+        	</div>
+            
+        </div>
+	</div>        
+    
+    
+	<div id="footer">
+    	<div id="fbut_bar">
+	    	<a href="#">Home</a> |
+		    <a href="categories.html">Categories</a> |
+		    <a href="buildpc.html">Build PC</a> |
+		    <a href="contactus.html">Contact us</a> |
+		    <a href="aboutus.html">About us</a>
+        </div>
+	  <div id="cp_right">&copy; Copyrights KSSBM 2013. All rights reserved.</div>
+	</div>
+
+</body>
+</html>

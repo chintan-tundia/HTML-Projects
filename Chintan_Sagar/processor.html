@@ -1,0 +1,122 @@
+<html>
+<head>
+<link href="assemble.css" rel="stylesheet">
+<script src="assemble.js"></script>
+<script>
+function changeitem(ref,no)
+{
+	
+	document.getElementById("zoomitem").style.backgroundImage=ref;
+	cont=document.getElementById("itemcont");
+	switch(no)
+	{
+		case 1:
+		cont.innerHTML="<font color='yellow' size='+2'>Intel Core i7</font><br>&bull;3.8GHz with Max Turbo Frequency";
+		cont.innerHTML+="<br>&bull;10MB Intel Smart Cache"
+		cont.innerHTML+="<br>&bull;44 Bus/Core ratio"
+		cont.innerHTML+="<br>&bull;	5 GT/s DMI"
+		cont.innerHTML+="<br>&bull;	Integrated graphics"
+		break;
+		case 2:
+		cont.innerHTML="<font color='yellow' size='+2'>Intel Core i5</font><br>&bull;Model: Intel Core i5 Processor i5-3570K"
+		cont.innerHTML+="<br>&bull;Clock Speed: 3.4 GHz"
+		cont.innerHTML+="<br>&bull;DMI: 5 GT/s"
+		cont.innerHTML+="<br>&bull;Intel Smart Cache: 6 MB"
+		cont.innerHTML+="<br>&bull;Lithography: 22 nm"
+		
+		break;
+		case 3:
+		cont.innerHTML="<font color='yellow' size='+2'>Intel Core i3</font>"
+		cont.innerHTML+="<br>&bull;Core Count: 2"
+		cont.innerHTML+="<br>&bull;Clock Speed: 3.3 GHz"
+		cont.innerHTML+="<br>&bull;Intel Smart Cache: 3 MB"
+		cont.innerHTML+="<br>&bull;Max Memory Bandwidth: 25.6 GB/s"
+		cont.innerHTML+="<br>&bull;Socket: LGA1155"
+
+		break;
+		case 4:
+		cont.innerHTML="<font color='yellow' size='+2'>Intel Core 2 Duo </font><br>&bull;LGA775 socket processor contains two cores running at 2.93 GHz"
+		cont.innerHTML+="<br>&bull;Processor runs on a 1066 MHz front side bus and has 3 MB of L2 cache"
+		cont.innerHTML+="<br>&bull;45nm architecture provides better performance and energy efficiency"
+		cont.innerHTML+="<br>&bull;Multimedia acceleration boosts performance in applications "
+		cont.innerHTML+="<br>&bull;Intelligent Power Capability turns off portions of the processor "
+	
+		break;
+		case 5:
+		cont.innerHTML="<font color='yellow' size='+2'>AMD</font><br>&bull;Multi-Core: Dual-core"
+		cont.innerHTML+="<br>&bull;Operating Frequency: 3.4GHz"
+		cont.innerHTML+="<br>&bull;Socket: AM3"
+		cont.innerHTML+="<br>&bull;Cache: 2MB"
+		cont.innerHTML+="<br>&bull;Power: 65W"
+
+		break;
+		default:
+		cont.innerHTML=""
+	}
+}
+</script>
+</head>
+
+<body onLoad="changeitem('url(images/processor/i7.jpg)',1)">
+<div id="main_body">
+
+<div id="header_bar">
+	<div id="header">
+    	<div id="tollfree"><div id="ph_icon"></div>Need Help ?<br>&nbsp;Call 1800-2167-2166(Toll Free) </div>
+        <div id="titlebar"><a href="index.html"><div id="logo"></div><div id="title">COMPUTER STORE</div></a></div>
+        
+        
+      <div id="but_bar">
+        	<a href="index.html"><div class="button">Home</div></a>
+		    <a href="categories.html"><div class="button">Categories
+            <div class="submenu_bar">
+		          <a href="processor.html"><div class="subbut">Processor</div></a>
+                  <a href="motherboard.html"><div class="subbut">Motherboard</div></a>
+                  <a href="monitor.html"><div class="subbut">Monitor</div></a>
+                  <a href="ram.html"><div class="subbut">RAM</div></a>                  
+                  <a href="harddisk.html"><div class="subbut">Hard disk</div></a>
+                  <a href="opticaldrives.html"><div class="subbut">Optical Drives</div></a>
+                  <a href="graphicscard.html"><div class="subbut">Graphics card</div></a> 
+                  <a href="peripherals.html"><div class="subbut">Peripherals</div></a>
+                  
+          </div>
+          </div></a>
+		    <a href="buildpc.html"><div class="button">Build PC</div></a>
+		    <a href="contactus.html"><div class="button">Contact us</div></a>
+		    <a href="aboutus.html"><div class="button">About us</div></a>
+        </div>
+  </div>
+  </div>
+    
+	<div id="container">
+   <div class="name_bar">Processor</div>
+   <div id="box">
+
+   		<div id="aboutus_content">
+        <div id="zoomitem" style="background-image:url(images/graphics%20card/asus.jpeg)"></div>
+        <div id="itemcont"></div>
+			<div class="itembar">
+					<div class="item"><img src="images/processor/i7.jpg" onMouseOver="changeitem('url(images/processor/i7.jpg)',1)">Intel Core i7</div>
+					<div class="item"><img src="images/processor/i5.jpg" onMouseOver="changeitem('url(images/processor/i5.jpg)',2)">Intel Core i5</div>
+                    <div class="item"><img src="images/processor/i3.jpg" onMouseOver="changeitem('url(images/processor/i3.jpg)',3)">Intel Core i3</div>
+                    <div class="item"><img src="images/processor/core2duo.jpg" onMouseOver="changeitem('url(images/processor/core2duo.jpg)',4)">Intel Core 2 duo</div>
+					<div class="item"><img src="images/processor/amd.jpg" onMouseOver="changeitem('url(images/processor/amd.jpg)',5)">AMD</div>
+            </div>        
+        </div>
+   		</div>
+	</div>        
+   </div>
+    
+	<div id="footer">
+    	<div id="fbut_bar">
+	    	<a href="index.html">Home</a> |
+		    <a href="categories.html">Categories</a> |
+		    <a href="buildpc.html">Build PC</a> |
+		    <a href="contactus.html">Contact us</a> |
+		    <a href="aboutus.html">About us</a>
+        </div>
+	  <div id="cp_right">&copy; Copyrights KSSBM 2013. All rights reserved.</div>
+	</div>
+
+</body>
+</html>

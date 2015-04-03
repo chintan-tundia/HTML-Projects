@@ -1,0 +1,119 @@
+<html>
+<head>
+<link href="assemble.css" rel="stylesheet">
+<script src="assemble.js"></script>
+<script>
+function changeitem(ref,no)
+{
+	
+	document.getElementById("zoomitem").style.backgroundImage=ref;
+	cont=document.getElementById("itemcont");
+	switch(no)
+	{
+		case 1:
+		cont.innerHTML="<font color='yellow' size='+2'>Asus ATI Radeon HD5450 </font><br>&bull;Chipset: Radeon HD 5450"
+		cont.innerHTML+="<br>&bull;Engine Clock: 650 MHz"
+		cont.innerHTML+="<br>&bull;Video Memory: 1GB DDR3"
+		cont.innerHTML+="<br>&bull;Memory Clock: 800 MHz"
+		cont.innerHTML+="<br>&bull;Memory Interface: 64-bit"
+		
+		break;
+		case 2:
+		cont.innerHTML="<font color='yellow' size='+2'>EVGA GeForce GT 520 </font><br>&bull;GeForce GT 520 with 810 MHz core clock PCI Express 2.0 "
+		cont.innerHTML+="<br>&bull;1024 MB 64-bit DDR3 Nemory"
+		cont.innerHTML+="<br>&bull;1000 MHz Effective Memory Clock and 1620 MHz Shader Clock"
+	    cont.innerHTML+="<br>&bull;Microsoft DirectX 11 Support"
+		cont.innerHTML+="<br>&bull;Blu-ray 3D Support";
+		
+		break;
+		case 3:
+		cont.innerHTML="<font color='yellow' size='+2'>ZOTAC GeForce GTX 460  </font><br>&bull;NVIDIA GeForce GTX 460 GPU,1GB GDDR5"
+		cont.innerHTML+="<br>&bull;DirectX 11 support Memory Clock: 3600 MHz, "
+		cont.innerHTML+="<br>&bull;Nvidia PureVideo HD Technology"
+		cont.innerHTML+="<br>&bull;Mini-HDMI 1.3a with audio, HDCP ready"
+		cont.innerHTML+="<br>&bull;ED 480p, HD 720p, HD 1080i, Full HD 1080p"
+		break;
+		case 4:
+		cont.innerHTML="<font color='yellow' size='+2'>ZOTAC GeForce GTX 460  </font><br>&bull;Actively draws air into and blows hot air out of your PC case "
+		cont.innerHTML+="<br>&bull;Microsoft DirectX 11 support"
+		cont.innerHTML+="<br>&bull;AMD HD3D technology, for full stereoscopic 3D viewing"
+		cont.innerHTML+="<br>&bull;AMD CrossFireX technology"
+		cont.innerHTML+="<br>&bull;Advanced GDDR5 memory delivers more speed and higher bandwidth"
+		break;
+		case 5:
+		cont.innerHTML="<font color='yellow' size='+2'>PNY NVIDIA GeForce GT 630 </font><br>&bull;Chipset: NVIDIA GeForce GT 630"
+		cont.innerHTML+="<br>&bull;Video Memory: 2GB GDDR3"
+		cont.innerHTML+="<br>&bull;Memory Interface: 128-bit"
+		cont.innerHTML+="<br>&bull;Bus: PCI-Express 2.0 x16"
+		cont.innerHTML+="<br>&bull;Connectors: VGA, DVI, HDMI"
+		break;
+		default:
+		cont.innerHTML=""
+	}
+}
+</script>
+</head>
+
+<body onLoad="changeitem('url(images/graphics%20card/asus.jpeg)',1)">
+<div id="main_body">
+
+<div id="header_bar">
+	<div id="header">
+    	<div id="tollfree"><div id="ph_icon"></div>Need Help ?<br>&nbsp;Call 1800-2167-2166(Toll Free) </div>
+        <div id="titlebar"><a href="index.html"><div id="logo"></div><div id="title">COMPUTER STORE</div></a></div>
+        
+        
+      <div id="but_bar">
+        	<a href="index.html"><div class="button">Home</div></a>
+		    <a href="categories.html"><div class="button">Categories
+            <div class="submenu_bar">
+		          <a href="processor.html"><div class="subbut">Processor</div></a>
+                  <a href="motherboard.html"><div class="subbut">Motherboard</div></a>
+                  <a href="monitor.html"><div class="subbut">Monitor</div></a>
+                  <a href="ram.html"><div class="subbut">RAM</div></a>                  
+                  <a href="harddisk.html"><div class="subbut">Hard disk</div></a>
+                  <a href="opticaldrives.html"><div class="subbut">Optical Drives</div></a>
+                  <a href="graphicscard.html"><div class="subbut">Graphics card</div></a> 
+                  <a href="peripherals.html"><div class="subbut">Peripherals</div></a>
+                  
+          </div>
+          </div></a>
+		    <a href="buildpc.html"><div class="button">Build PC</div></a>
+		    <a href="contactus.html"><div class="button">Contact us</div></a>
+		    <a href="aboutus.html"><div class="button">About us</div></a>
+        </div>
+  </div>
+  </div>
+    
+	<div id="container">
+   <div class="name_bar">Graphics Card</div>
+   <div id="box">
+
+   		<div id="aboutus_content">
+        <div id="zoomitem" style="background-image:url(images/graphics%20card/asus.jpeg)"></div>
+        <div id="itemcont"></div>
+			<div class="itembar">
+					<div class="item"><img src="images/graphics card/asus.jpeg" onMouseOver="changeitem('url(images/graphics%20card/asus.jpeg)',1)">Asus</div>
+					<div class="item"><img src="images/graphics card/evga.jpeg" onMouseOver="changeitem('url(images/graphics%20card/evga.jpeg)',2)">EVGA</div>
+                    <div class="item"><img src="images/graphics card/geforce.jpg" onMouseOver="changeitem('url(images/graphics%20card/geforce.jpg)',3)">GEforce</div>
+                    <div class="item"><img src="images/graphics card/his.jpg" onMouseOver="changeitem('url(images/graphics%20card/his.jpg)',4)">HIS</div>
+					<div class="item"><img src="images/graphics card/nvidia.jpeg" onMouseOver="changeitem('url(images/graphics%20card/nvidia.jpeg)',5)">NVIDIA</div>
+            </div>        
+        </div>
+   		</div>
+	</div>        
+   </div>
+    
+	<div id="footer">
+    	<div id="fbut_bar">
+	    	<a href="index.html">Home</a> |
+		    <a href="categories.html">Categories</a> |
+		    <a href="buildpc.html">Build PC</a> |
+		    <a href="contactus.html">Contact us</a> |
+		    <a href="aboutus.html">About us</a>
+        </div>
+	  <div id="cp_right">&copy; Copyrights KSSBM 2013. All rights reserved.</div>
+	</div>
+
+</body>
+</html>

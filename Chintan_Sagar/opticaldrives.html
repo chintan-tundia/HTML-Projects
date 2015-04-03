@@ -1,0 +1,125 @@
+<html>
+<head>
+<link href="assemble.css" rel="stylesheet">
+<script src="assemble.js"></script>
+<script>
+function changeitem(ref,no)
+{
+	
+	document.getElementById("zoomitem").style.backgroundImage=ref;
+	cont=document.getElementById("itemcont");
+	switch(no)
+	{
+		case 1:
+		cont.innerHTML="<font color='yellow' size='+2'>Asus</font><br>&bull;3TB storage capacity with SATA 6Gb/s NCQ Interface"
+		cont.innerHTML+="<br>&bull;SATA 6Gb/s interface optimizes burst performance"
+		cont.innerHTML+="<br>&bull;Seagate AcuTrac servo technology delivers dependable performance,"
+		cont.innerHTML+="<br>&bull;Seagate OptiCache technology boosts overall performance"
+		cont.innerHTML+="<br>&bull;Ships in Certified Frustration-Free Packaging"
+
+		break;
+		case 2:
+		cont.innerHTML="<font color='yellow' size='+2'>LG</font><br>&bull;third generation SATA interface with 6 GB/s transfer rate,"
+		cont.innerHTML+="<br>&bull;WhisperDrive technology minimizes noise to levels near the threshold of human hearing."
+		cont.innerHTML+="<br>&bull;SoftSeek technology streamlines read/write seeking algorithms"
+		cont.innerHTML+="<br>&bull;1 TB capacity holds up to 200,000 digital photos, 250,000 MP3 files, and 120 hours of HD video."
+		cont.innerHTML+="<br>&bull;2 year limited warranty"
+
+		
+		break;
+		case 3:
+		cont.innerHTML="<font color='yellow' size='+2'>Samsung</font><br>&bull;1TB Capacity"
+		cont.innerHTML+="<br>&bull;7200 RPM performance"
+		cont.innerHTML+="<br>&bull;Up to 16% idle power savings over previous generation product"
+		cont.innerHTML+="<br>&bull;Halogen-free design"
+		cont.innerHTML+="<br>&bull;Advanced Format"
+		break;
+		
+		case 4:
+		cont.innerHTML="<font color='yellow' size='+2'>Silverstone</font><br>&bull;USB 3.0-powered portable add-on storage"
+		cont.innerHTML+="<br>&bull;Easy to use with no software to install."
+		cont.innerHTML+="<br>&bull;Protects your drive (Internal Shock Sensor and Ramp Loading Technology)."
+		cont.innerHTML+="<br>&bull;Gives you peace of mind (Toshiba 3-Year Limited Warranty)."
+		cont.innerHTML+="<br>&bull;Plug and play operation."
+
+		break;
+		
+		case 5:
+		cont.innerHTML="<font color='yellow' size='+2'>Sony</font><br>&bull;1 TB"
+		cont.innerHTML+="<br>&bull;5400 RPM"
+		cont.innerHTML+="<br>&bull;9.5 mm height"
+		cont.innerHTML+="<br>&bull;Buffer DRAM Size: 8 MB"
+		cont.innerHTML+="<br>&bull;Interface: SATA 3.0 Gbps"
+
+
+		break;
+		default:
+		cont.innerHTML=""
+	}
+}
+</script>
+</head>
+
+<body onLoad="changeitem('url(images/opticaldrive/asus.jpg)',1)">
+<div id="main_body">
+
+<div id="header_bar">
+	<div id="header">
+    	<div id="tollfree"><div id="ph_icon"></div>Need Help ?<br>&nbsp;Call 1800-2167-2166(Toll Free) </div>
+        <div id="titlebar"><a href="index.html"><div id="logo"></div><div id="title">COMPUTER STORE</div></a></div>
+        
+        
+      <div id="but_bar">
+        	<a href="index.html"><div class="button">Home</div></a>
+		    <a href="categories.html"><div class="button">Categories
+            <div class="submenu_bar">
+		          <a href="processor.html"><div class="subbut">Processor</div></a>
+                  <a href="motherboard.html"><div class="subbut">Motherboard</div></a>
+                  <a href="monitor.html"><div class="subbut">Monitor</div></a>
+                  <a href="ram.html"><div class="subbut">RAM</div></a>                  
+                  <a href="harddisk.html"><div class="subbut">Hard disk</div></a>
+                  <a href="opticaldrives.html"><div class="subbut">Optical Drives</div></a>
+                  <a href="graphicscard.html"><div class="subbut">Graphics card</div></a> 
+                  <a href="peripherals.html"><div class="subbut">Peripherals</div></a>
+                  
+          </div>
+          </div></a>
+		    <a href="buildpc.html"><div class="button">Build PC</div></a>
+		    <a href="contactus.html"><div class="button">Contact us</div></a>
+		    <a href="aboutus.html"><div class="button">About us</div></a>
+        </div>
+  </div>
+  </div>
+    
+	<div id="container">
+   <div class="name_bar">Optical Drives</div>
+   <div id="box">
+
+   		<div id="aboutus_content">
+        <div id="zoomitem" style="background-image:url(images/graphics%20card/asus.jpeg)"></div>
+        <div id="itemcont"></div>
+			<div class="itembar">
+					<div class="item"><img src="images/opticaldrive/asus.jpg" onMouseOver="changeitem('url(images/opticaldrive/asus.jpg)',1)">Asus</div>
+					<div class="item"><img src="images/opticaldrive/lg.jpg" onMouseOver="changeitem('url(images/opticaldrive/lg.jpg)',2)">LG</div>
+                    <div class="item"><img src="images/opticaldrive/samsung.jpg" onMouseOver="changeitem('url(images/opticaldrive/samsung.jpg)',3)">Samsung</div>
+					<div class="item"><img src="images/opticaldrive/silverstone.jpg" onMouseOver="changeitem('url(images/opticaldrive/silverstone.jpg)',5)">Silverstone</div>
+                    <div class="item"><img src="images/opticaldrive/sony.jpg" onMouseOver="changeitem('url(images/opticaldrive/sony.jpg)',4)">Sony</div>
+            </div>        
+        </div>
+   		</div>
+	</div>        
+   </div>
+    
+	<div id="footer">
+    	<div id="fbut_bar">
+	    	<a href="index.html">Home</a> |
+		    <a href="categories.html">Categories</a> |
+		    <a href="buildpc.html">Build PC</a> |
+		    <a href="contactus.html">Contact us</a> |
+		    <a href="aboutus.html">About us</a>
+        </div>
+	  <div id="cp_right">&copy; Copyrights KSSBM 2013. All rights reserved.</div>
+	</div>
+
+</body>
+</html>

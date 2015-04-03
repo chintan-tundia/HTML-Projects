@@ -1,0 +1,123 @@
+<html>
+<head>
+<link href="assemble.css" rel="stylesheet">
+<script src="assemble.js"></script>
+<script>
+function changeitem(ref,no)
+{
+	
+	document.getElementById("zoomitem").style.backgroundImage=ref;
+	cont=document.getElementById("itemcont");
+	switch(no)
+	{
+		case 1:
+		cont.innerHTML="<font color='yellow' size='+2'>LG</font><br>&bull;Processor Socket: AMD  AM3+"
+		cont.innerHTML+="<br>&bull;Form Factor: Micro ATX"
+		cont.innerHTML+="<br>&bull;RAM Memory Technology: DDR3 1066;DDR3 1333"
+		cont.innerHTML+="<br>&bull;Ram Memory Maximum Size: 8.00 GB"
+		cont.innerHTML+="<br>&bull;Width: 10.00 inches"
+		break;
+
+		case 2:
+		cont.innerHTML="<font color='yellow' size='+2'>HP</font><br>&bull;Supports 2nd and 3rd generation Intel Core processors"
+		cont.innerHTML+="<br>&bull;Intel H77 Express Chipset"
+		cont.innerHTML+="<br>&bull;Windows 7 WHQL certified"
+		cont.innerHTML+="<br>&bull;Supports the 2nd & 3rd generation Intel Core i7 and Core i5 processors"
+		cont.innerHTML+="<br>&bull;DVI-I, HDMI and DisplayPort connectors"
+		break;
+
+		case 3:
+		cont.innerHTML="<font color='yellow' size='+2'>Viewsonic</font><br>&bull;SATA: 6x SATA3 Ports, Support RAID 0/ 1/ 5/ 10"
+		cont.innerHTML+="<br>&bull;Audio: Realtek ALC887 8-Channel High Definition Audio CODEC"
+		cont.innerHTML+="<br>&bull;CPU: Socket AM3+ Support FX/ Phenom II /Athlon Series Processors "
+		cont.innerHTML+="<br>&bull;LAN: Integrated Realtek 8111E Gigabit Ethernet Controller"
+		cont.innerHTML+="<br>&bull;Ports: 12x USB 2.0 Ports(6 rear, 6 at mid-board); 2x USB 3.0 Ports; 2x PS/2 "
+
+		break;
+
+		case 4:
+		cont.innerHTML="<font color='yellow' size='+2'>Samsung</font><br>&bull;CPU: Socket AM3+/ AM3/ AM2+/ AM2"
+		cont.innerHTML+="<br>&bull;Chipset: North Bridge NVIDIA GeForce 7025 & South Bridge nForce 630"
+		cont.innerHTML+="<br>&bull;Memory: 2X DDR3-1600/1333/1066/800?DIMMs, 2X DDR2-1066/800/667/533"
+		cont.innerHTML+="<br>&bull;Slots: 1X PCI-Express X16 Slots; 1X PCI-Express X1 Slot; 2X PCI Slots"
+		cont.innerHTML+="<br>&bull;IDE/SATA: 1X ATA133 IDE Connector; 4X SATA2 Ports"
+		break;
+
+		case 5:
+		cont.innerHTML="<font color='yellow' size='+2'>Asus</font><br>&bull;CPU Socket Type AM3"
+		cont.innerHTML+="<br>&bull;North Bridge AMD 760G"
+		cont.innerHTML+="<br>&bull;Memory Standard DDR3 800/1066/1333/1600(OC)"
+		cont.innerHTML+="<br>&bull;Onboard Video Chipset ATI Radeon 3000"
+		cont.innerHTML+="<br>&bull;LAN Chipset Realtek 8105T"
+		break;
+
+		default:
+		cont.innerHTML=""
+	}
+}
+</script>
+</head>
+
+<body onLoad="changeitem('url(images/monitor/lg.jpg)',1)">
+<div id="main_body">
+
+<div id="header_bar">
+	<div id="header">
+    	<div id="tollfree"><div id="ph_icon"></div>Need Help ?<br>&nbsp;Call 1800-2167-2166(Toll Free) </div>
+        <div id="titlebar"><a href="index.html"><div id="logo"></div><div id="title">COMPUTER STORE</div></a></div>
+        
+        
+      <div id="but_bar">
+        	<a href="index.html"><div class="button">Home</div></a>
+		    <a href="categories.html"><div class="button">Categories
+            <div class="submenu_bar">
+		          <a href="processor.html"><div class="subbut">Processor</div></a>
+                  <a href="motherboard.html"><div class="subbut">Motherboard</div></a>
+                  <a href="monitor.html"><div class="subbut">Monitor</div></a>
+                  <a href="ram.html"><div class="subbut">RAM</div></a>                  
+                  <a href="harddisk.html"><div class="subbut">Hard disk</div></a>
+                  <a href="opticaldrives.html"><div class="subbut">Optical Drives</div></a>
+                  <a href="graphicscard.html"><div class="subbut">Graphics card</div></a> 
+                  <a href="peripherals.html"><div class="subbut">Peripherals</div></a>
+                  
+          </div>
+          </div></a>
+		    <a href="buildpc.html"><div class="button">Build PC</div></a>
+		    <a href="contactus.html"><div class="button">Contact us</div></a>
+		    <a href="aboutus.html"><div class="button">About us</div></a>
+        </div>
+  </div>
+  </div>
+    
+	<div id="container">
+   <div class="name_bar">Monitor</div>
+   <div id="box">
+
+   		<div id="aboutus_content">
+        <div id="zoomitem" style="background-image:url(images/graphics%20card/asus.jpeg)"></div>
+        <div id="itemcont"></div>
+			<div class="itembar">
+					<div class="item"><img src="images/monitor/lg.jpg" onMouseOver="changeitem('url(images/monitor/lg.jpg)',1)">LG</div>
+					<div class="item"><img src="images/monitor/hp.jpg" onMouseOver="changeitem('url(images/monitor/hp.jpg)',2)">HP</div>
+                    <div class="item"><img src="images/monitor/viewsonic.jpg" onMouseOver="changeitem('url(images/monitor/viewsonic.jpg)',3)">Viewsonic</div>
+                    <div class="item"><img src="images/monitor/samsung.jpg" onMouseOver="changeitem('url(images/monitor/samsung.jpg)',4)">Samsung</div>
+					<div class="item"><img src="images/monitor/asus.jpg" onMouseOver="changeitem('url(images/monitor/asus.jpg)',5)">Asus</div>
+            </div>        
+        </div>
+   		</div>
+	</div>        
+   </div>
+    
+	<div id="footer">
+    	<div id="fbut_bar">
+	    	<a href="index.html">Home</a> |
+		    <a href="categories.html">Categories</a> |
+		    <a href="buildpc.html">Build PC</a> |
+		    <a href="contactus.html">Contact us</a> |
+		    <a href="aboutus.html">About us</a>
+        </div>
+	  <div id="cp_right">&copy; Copyrights KSSBM 2013. All rights reserved.</div>
+	</div>
+
+</body>
+</html>

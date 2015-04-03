@@ -1,0 +1,270 @@
+<html>
+<head>
+<link href="assemble.css" rel="stylesheet">
+<script src="assemble.js"></script>
+</head>
+
+<body>
+<div id="main_body">
+
+<div id="header_bar">
+	<div id="header">
+    	<div id="tollfree"><div id="ph_icon"></div>Need Help ?<br>&nbsp;Call 1800-2167-2166(Toll Free) </div>
+        <div id="titlebar"><a href="index.html"><div id="logo"></div><div id="title">COMPUTER STORE</div></a></div>
+        
+        
+      <div id="but_bar">
+        	<a href="index.html"><div class="button">Home</div></a>
+		    <a href="categories.html"><div class="button">Categories
+            <div class="submenu_bar">
+		          <a href="processor.html"><div class="subbut">Processor</div></a>
+                  <a href="motherboard.html"><div class="subbut">Motherboard</div></a>
+                  <a href="monitor.html"><div class="subbut">Monitor</div></a>
+                  <a href="ram.html"><div class="subbut">RAM</div></a>                  
+                  <a href="harddisk.html"><div class="subbut">Hard disk</div></a>
+                  <a href="opticaldrives.html"><div class="subbut">Optical Drives</div></a>
+                  <a href="graphicscard.html"><div class="subbut">Graphics card</div></a> 
+                  <a href="peripherals.html"><div class="subbut">Peripherals</div></a>
+                  
+          </div>
+          </div></a>
+		    <a href="#"><div class="button">Build PC</div></a>
+		    <a href="contactus.html"><div class="button">Contact us</div></a>
+		    <a href="aboutus.html"><div class="button">About us</div></a>
+        </div>
+  </div>
+  </div>
+    
+	<div id="container">
+	<div class="name_bar">Build PC</div>
+    	<div id="total">Total Price: Rs. <font id="tot">0</font></div>
+        <div id="box" style="color:#FFFFFF">
+        	<div id="aboutus_content">
+  			    
+<table border="0"bordercolor="#FFFFFF">
+<tr>
+	<th></th>
+    <th><font color="#FFFF00" size="+1">ITEM</font></th>
+    <th><font color="#FFFF00" size="+1">SELECTION</font></th>
+    <th><font color="#FFFF00" size="+1">PRICE</font></th>
+</tr>
+<tr>
+<td width="100px">
+<img src="images/processor.png" />
+</td>
+<td width="100px">
+Processor 
+</td>
+<td width="240px">
+<select id="s1" onChange="selected()">
+<option value="0">Select One</option>
+<option value="4350">Intel C2D</option>
+<option value="5700">Intel i3</option>
+<option value="8200">Intel i5</option>
+<option value="14900">Intel i7</option>
+<option value="3300">AMD AM3 X2 Athlon</option>
+</select>
+</td>
+<td width="50px">0</td></tr>
+
+<tr>
+<td ><img src="images/motherboard.png" /></td>
+<td width="150px">
+
+Mother Board
+</td>
+<td>
+<select id="s2" onChange="selected()">
+<option value="0">Select One</option>
+<option value="3850">Intel Original</option>
+<option value="2900">Intel Chipset Asus/MSI</option>
+<option value="2500">AMD Asus</option>
+<option value="2550">AMD MSI</option>
+<option value="2900">Gigabite</option>
+
+</select>
+</td>
+<td>0</td></tr>
+<tr>
+<td><img src="images/monitor.png" /></td>
+<td>
+
+Monitor
+</td>
+<td>
+ <select id="s3" onChange="selected()">
+
+<option value="0">Select One</option>
+<option value="4200">LG - 15.5" LCD Monitor</option>
+<option value="4800">LG - 18.5" LCD Monitor</option>
+ <option value="6200">LG - 20" LCD/ LED Monitor</option>
+ <option value="7900">LG - 22" LCD/ LED Monitor with USB</option>
+ <option value="11500">LG - 20" LCD/ LED Monitor with TV</option>
+ </select>
+</td>
+<td>0</td></tr>
+<tr>
+<td><img src="images/ram.png"/></td>
+<td>
+RAM 
+</td>
+<td>
+<select id="s4" onChange="selected()">
+<option value="0">Select One</option>
+<option value="1450">DDR 3 2GB</option>
+<option value="1700">DDR 3 2GB Laptop/Atom</option>
+<option value="2800">DDR 3 4GB</option>
+<option value="1800">DDR 2 1GB</option>
+</select>
+</td>
+<td>0</td></tr>
+<tr>
+<td><img src="images/harddisk.png" /></td>
+<td>
+Hard Disk 
+</td>
+<td>
+<select id="s5" onChange="selected()">
+<option value="0">Select One</option>
+<option value="2050">500 GB SATA</option>
+<option value="3900">1 TB SATA</option>
+</select>
+</select>
+</td>
+<td>0</td></tr>
+<tr>
+<td><img src="images/opticaldrive.png" /></td>
+<td>
+Optical Drive 
+</td>
+<td>
+ <select id="s6" onChange="selected()">
+<option value="0">Select One</option>
+<option value="1050">LG DVD Writer</option>
+<option value="1350">HP DVD Writer</option>
+</select>
+</td>
+<td>0</td></tr>
+<tr>
+<td><img src="images/cabinet.png" /></td>
+<td>
+Cabinet and SMPS 
+</td>
+<td>
+<select id="s7" onChange="selected()">
+<option value="0">Select One</option>
+<option value="900">Normal Cabinet & 450wt SMPS</option>
+<option value="1500">iball/cooler master Cabinet and SMPS</option>
+</select>
+</td>
+<td>0</td></tr>
+<tr>
+<td><img src="images/keyboard.png" /></td>
+<td>
+Keyboard 
+</td>
+<td>
+<select id="s8" onChange="selected()">
+<option value="0">Select One</option>
+<option value="250">Normal Keyboard</option>
+<option value="700">iball/Logitech/Microsoft Keyboard</option>
+<option value="1350">cordless Keyboard combo</option>
+</select>
+</td>
+<td>0</td></tr>
+<tr>
+<td><img src="images/mouse.png" /></td>
+<td>
+Mouse 
+</td>
+<td>
+<select id="s9" onChange="selected()">
+<option value="0">Select One</option>
+<option value="150">Normal Mouse</option>
+<option value="375">iball/Logitech/Microsoft Mouse</option>
+<option value="800">Cordless Mouse</option>
+</select>
+</td>
+<td>0</td></tr>
+<tr>
+<td><img src="images/graphicscard.png" /></td>
+<td>
+Graphics Card 
+</td>
+<td>
+<select id="s10" onChange="selected()">
+<option value="0">Select One</option>
+<option value="2000">Normal Graphics Card</option>
+<option value="4500">Gaming Graphics Card</option>
+<option value="7500">Graphics Card Pro.</option>
+</select>
+</td>
+<td>0</td></tr>
+<tr>
+<td><img src="images/speaker.png" /></td>
+<td>
+Speaker 
+</td>
+<td>
+<select id="s11" onChange="selected()">
+<option value="0">Select One</option>
+<option value="400">Normal Speaker</option>
+<option value="900">Normal 2.1 Speaker</option>
+<option value="1150">Intex speaker 2.1 (2600 wt)</option>
+<option value="2050">4.1 Speaker</option>
+<option value="3800">CREATIVE 5.1 INSPAIR</option>
+<option value="7600">Altech lancing 2.1 speaker(model no- MX 6021)</option>
+<option value="9800">Z -10 INTRACTIVE 2.0 SPEAKER SYSTEM(LOGITECH)</option>
+</select>
+</td>
+<td>0</td></tr>
+<tr>
+<td><img src="images/peripheral.png" /></td>
+<td>
+Other Peripherals 
+</td>
+<td>
+<select id="s12" onChange="selected()">
+<option value="0">Select One</option>
+
+<option value="2100">Wireless Router</option>
+<option value="160">Normal Headphone Mike </option>
+<option value="3200">External Hdd 500 GB (portable -2.5") </option>
+<option value="3800">External HDD 1 TB(3.5+Power)</option>
+<option value="700">USB Floppy Drive 1.44Mb (External)</option>
+<option value="450">HARD DISK DRIVE COOLER FAN</option>
+<option value="350">Normal CPU Cooler FAN</option>
+<option value="350">BXSTS100A Intel Active heatsink</option>
+</select>
+</td>
+<td>0</td></tr>
+<tr>
+<td colspan="4">
+<center>
+	<input type="submit" value="Submit" onClick="control();">
+	<input type="reset" value="Reset" onClick="window.location='buildpc.html'">
+    </center>
+</td>
+</tr>
+</table>
+
+
+     </div>
+
+        </div>
+	</div>        
+    
+    
+	<div id="footer">
+    	<div id="fbut_bar">
+	    	<a href="index.html">Home</a> |
+		    <a href="categories.html">Categories</a> |
+		    <a href="#">Build PC</a> |
+		    <a href="contactus.html">Contact us</a> |
+		    <a href="aboutus.html">About us</a>
+        </div>
+	  <div id="cp_right">&copy; Copyrights KSSBM 2013. All rights reserved.</div>
+	</div>
+
+</body>
+</html>

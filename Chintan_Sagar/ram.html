@@ -1,0 +1,124 @@
+	<html>
+<head>
+<link href="assemble.css" rel="stylesheet">
+<script src="assemble.js"></script>
+<script>
+function changeitem(ref,no)
+{
+	
+	document.getElementById("zoomitem").style.backgroundImage=ref;
+	cont=document.getElementById("itemcont");
+	switch(no)
+	{
+		case 1:
+		cont.innerHTML="<font color='yellow' size='+2'>Kingston</font><br>&bull;16 GB (2x8 GB) DDR3 SODIMM kit for 2G Intel Core i5 and i7 "
+		cont.innerHTML+="<br>&bull;1600MHz"
+		cont.innerHTML+="<br>&bull;10-10-10-27 latency"
+		cont.innerHTML+="<br>&bull;1.5 volts"
+		cont.innerHTML+="<br>&bull;Auto-overclocking (no bios configuration required)"
+		break;
+		
+		case 2:
+		cont.innerHTML="<font color='yellow' size='+2'>Corsar</font><br>&bull;Capacity: 8GB (2X4GB) Kit"
+		cont.innerHTML+="<br>&bull;	DIMM Type: 240-Pin NON-ECC UDIMM"
+		cont.innerHTML+="<br>&bull;	Voltage: 1.5V"
+		cont.innerHTML+="<br>&bull;	Frequency: PC3-15000 (1866MHz)"
+		cont.innerHTML+="<br>&bull;Timings: 9-10-9-27"
+		break;
+		
+		case 3:
+		cont.innerHTML="<font color='yellow' size='+2'>Crucial</font><br>&bull;Memory capacity upgrade provides improved system performance and responsiveness"
+		cont.innerHTML+="<br>&bull;Increases System Performance"
+		cont.innerHTML+="<br>&bull;Easy to Install"
+		cont.innerHTML+="<br>&bull;Limited Lifetime Warranty"
+		cont.innerHTML+="<br>&bull;100% Tested"
+		break;
+		
+		case 4:
+		cont.innerHTML="<font color='yellow' size='+2'>Viper</font><br>&bull;USB 3.0-powered portable add-on storage"
+		cont.innerHTML+="<br>&bull;DIMM Type: 240-Pin NON-ECC UDIMM"
+		cont.innerHTML+="<br>&bull;Voltage: 1.5V"
+		cont.innerHTML+="<br>&bull;Frequency: PC3-15000 (1866MHz)"
+		cont.innerHTML+="<br>&bull;Timings: 9-10-9-27"
+
+		break;
+		
+		case 5:
+		cont.innerHTML="<font color='yellow' size='+2'>Pny</font><br>&bull;Capacity: 8GB (2X4GB) Kit"
+		cont.innerHTML+="<br>&bull;Deliver all the productivity your PC has to offer with PNY Memory"
+		cont.innerHTML+="<br>&bull;Easy installation, Free 24-hour Technical Support, and Lifetime Warranty!"
+		cont.innerHTML+="<br>&bull;Helps prepare your PC for running Windows 7"
+		cont.innerHTML+="<br>&bull;100% Tested"
+		
+		break;
+
+		default:
+		cont.innerHTML=""
+	}
+}
+</script>
+</head>
+
+<body onLoad="changeitem('url(images/RAM/kingston.jpg)',1)">
+<div id="main_body">
+
+<div id="header_bar">
+	<div id="header">
+    	<div id="tollfree"><div id="ph_icon"></div>Need Help ?<br>&nbsp;Call 1800-2167-2166(Toll Free) </div>
+        <div id="titlebar"><a href="index.html"><div id="logo"></div><div id="title">COMPUTER STORE</div></a></div>
+        
+        
+      <div id="but_bar">
+        	<a href="index.html"><div class="button">Home</div></a>
+		    <a href="categories.html"><div class="button">Categories
+            <div class="submenu_bar">
+		          <a href="processor.html"><div class="subbut">Processor</div></a>
+                  <a href="motherboard.html"><div class="subbut">Motherboard</div></a>
+                  <a href="monitor.html"><div class="subbut">Monitor</div></a>
+                  <a href="ram.html"><div class="subbut">RAM</div></a>                  
+                  <a href="harddisk.html"><div class="subbut">Hard disk</div></a>
+                  <a href="opticaldrives.html"><div class="subbut">Optical Drives</div></a>
+                  <a href="graphicscard.html"><div class="subbut">Graphics card</div></a> 
+                  <a href="peripherals.html"><div class="subbut">Peripherals</div></a>
+                  
+          </div>
+          </div></a>
+		    <a href="buildpc.html"><div class="button">Build PC</div></a>
+		    <a href="contactus.html"><div class="button">Contact us</div></a>
+		    <a href="aboutus.html"><div class="button">About us</div></a>
+        </div>
+  </div>
+  </div>
+    
+	<div id="container">
+   <div class="name_bar">RAM</div>
+   <div id="box">
+
+   		<div id="aboutus_content">
+        <div id="zoomitem" style="background-image:url(images/graphics%20card/asus.jpeg)"></div>
+        <div id="itemcont"></div>
+			<div class="itembar">
+					<div class="item"><img src="images/RAM/kingston.jpg" onMouseOver="changeitem('url(images/RAM/kingston.jpg)',1)">Kingston</div>
+					<div class="item"><img src="images/RAM/corsair.jpg" onMouseOver="changeitem('url(images/RAM/corsair.jpg)',2)">Corsair</div>
+                    <div class="item"><img src="images/RAM/crucial.jpg" onMouseOver="changeitem('url(images/RAM/crucial.jpg)',3)">Crucial</div>
+					<div class="item"><img src="images/RAM/pny.jpg" onMouseOver="changeitem('url(images/RAM/pny.jpg)',5)">PNY</div>
+                    <div class="item"><img src="images/RAM/viper.jpg" onMouseOver="changeitem('url(images/RAM/viper.jpg)',4)">Viper</div>
+            </div>        
+        </div>
+   		</div>
+	</div>        
+   </div>
+    
+	<div id="footer">
+    	<div id="fbut_bar">
+	    	<a href="index.html">Home</a> |
+		    <a href="categories.html">Categories</a> |
+		    <a href="buildpc.html">Build PC</a> |
+		    <a href="contactus.html">Contact us</a> |
+		    <a href="aboutus.html">About us</a>
+        </div>
+	  <div id="cp_right">&copy; Copyrights KSSBM 2013. All rights reserved.</div>
+	</div>
+
+</body>
+</html>
